@@ -96,3 +96,21 @@ img {
 .text {
     color: white;
 }
+
+@media screen and (max-width: 980px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 64opx) {
+    .container {
+        width: 100%
+    }
+}
