@@ -79,6 +79,9 @@ h1 {
 
 h2 {
     color: white;
+    font-size: 30px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(141, 140, 140);
 }
 
 li {
