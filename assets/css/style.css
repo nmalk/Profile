@@ -55,3 +55,44 @@ nav h5 {
     padding: 10px;
     line-height: 20px;
 }
+
+.main-container {
+    width: 100%;
+    max-width: 960px;
+    /* background-color: #ffffff;
+    border-color: #dddddd; */
+    margin: 0 auto;
+    /* margin-left: 300px; */
+    margin-top: 70px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: transparent !important;
+}
+
+h1 {
+    color: white;
+    border-bottom: 1px solid rgb(141, 140, 140);
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+h2 {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+img {
+    width: 230px;
+    height: 240px;
+    margin-top: 10px;
+    margin-right: 20px;
+    float: left;
+}
+
+.text {
+    color: white;
+}
