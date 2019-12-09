@@ -151,9 +151,10 @@ hr {
 }
 
 h1,
-h2 {
+h2,
+.text {
     color: white;
-    font-size: 30px;
+    font-size: 1.2em !important;
     padding: 10px;
 }
 
@@ -162,7 +163,6 @@ h2,
 span,
 .text {
     color: white;
-    font-size: 1.2em !important;
     text-shadow: -1.5px -1.5px 1px var(--pressed);
 }
 
@@ -171,11 +171,15 @@ span,
     color: white;
     font-size: 1em !important;
     text-shadow: -1.5px -1.5px 1px var(--pressed);
+    margin-bottom: calc(var(--outer) * 1.5);
 }
 
 .title span {
     float: right;
     font-style: italic;
+    font-size: 1.2em;
+    line-height: 15px;
+    text-decoration: overline;
 }
 
 .no-list {
@@ -191,6 +195,8 @@ a .block {
     color: white;
     border: 1px var(--style);
     height: 200px;
+    position: relative;
+    top: var(--gap);
 }
 
 .block {
@@ -220,7 +226,6 @@ img {
         max-width: 1200px;
     }
 
-    
     a .block {
         width: 100%;
     }
@@ -236,6 +241,13 @@ img {
         margin-right: -20px !important;
     }
 
+    /*
+
+    p, span {
+        font-size: .9em !important;
+    }
+*/
+
     a .block {
         border-radius: var(--radi-all);
         width: 100%;
@@ -246,8 +258,9 @@ img {
             width: 100%;
             min-width: 980px;
         }
+
         p span {
-            font-size: .8em !important;
+            font-size: .7em;
         }
     }
 
@@ -256,10 +269,14 @@ img {
             width: 100%;
             margin-left: 0;
         }
+        
+        .title span {
+            line-height: normal !important;
+        }
 
         a .block {
             border-radius: var(--radi-all);
-            margin-bottom: calc(var(--outer) + 10px);
+            
             width: 100%;
         }
     }
