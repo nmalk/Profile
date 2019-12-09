@@ -13,7 +13,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.sticky {
+.fixed {
     position: fixed;
     top: 0;
     width: 100%;
@@ -69,19 +69,19 @@ nav h5 {
     background-color: transparent !important;
 }
 
-h1 {
+h1, h2 {
     color: white;
-    border-bottom: 1px solid rgb(141, 140, 140);
+    /* border-bottom: 1px solid rgb(141, 140, 140); */
     font-size: 30px;
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
-h2 {
-    color: white;
-    font-size: 30px;
-    padding: 10px;
-    border-bottom: 1px solid rgb(141, 140, 140);
+hr {
+    height: 2px;
+    background: rgb(141, 140, 140);
+    /* box-shadow: 1px 2px 5px 1px  rgb(177, 177, 77); */
+    box-shadow: 1px 1px 5px 1px rgb(201, 99, 116);
 }
 
 li {
@@ -95,7 +95,7 @@ img {
     margin-right: 20px;
     float: left;
     border-radius: 20px;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 5px 5px 10px black;
 }
 
 .text {
@@ -103,19 +103,19 @@ img {
 }
 
 @media screen and (max-width: 980px) {
-    .container {
+    .main-container {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .container {
+    .main-container {
         width: 100%
     }
 }
 
-@media screen and (max-width: 64opx) {
-    .container {
+@media screen and (max-width: 640px) {
+    .main-container {
         width: 100%
     }
 }
