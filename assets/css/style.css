@@ -8,9 +8,18 @@
     --color: initial;
     --accent-color: #fff;
     --light: #fff;
+    --light-grey: #ccc;
     --link: #007bff;
     --hover: #3bcaa9;
     --navbar: rgb(80, 20, 77);
+    /* Social Media 
+    ---------------------*/
+    --facebook: #3b5999;
+    --linkedin: #0077B5;
+    --github: #fff;
+    --codepen: #2a2a2a;
+    --gmail: #a7362a;
+    --paypal: #3b7bbf;
     /* 
         vals 
     ---------------------*/
@@ -61,6 +70,7 @@
     --parallax: center center/cover no-repeat fixed;
     /*    --img-path: url('../../images/img.jpg'); */
     /* e.g. */
+    --main-bg: url("../images/background5.jpg");
     --img-path1: url("../images/krave.png");
     --img-path2: url("../images/krave.png");
     --img-path3: url("../images/krave.png");
@@ -68,18 +78,6 @@
 
 * {
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.15em;
-    line-height: 34px;
-    --color: #777777;
-    margin: 0;
-    padding: 0;
-    background-image: url("../images/background5.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .device-width {
@@ -92,6 +90,21 @@ body {
 
 .wide {
     margin: 0 var(--wide);
+}
+
+/*
+    Current Code
+==========================*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
+    line-height: 34px;
+    --color: #777777;
+    margin: 0;
+    padding: 0;
+    background-image: var(--main-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .page {
@@ -137,6 +150,10 @@ a#logo {
     text-decoration: underline !important;
 }
 
+.navbar-collapse {
+    margin-left: 425px;
+}
+
 nav {
     float: right;
 }
@@ -148,11 +165,10 @@ a {
 
 a:hover {
     color: var(--hover);
-    text-decoration: none !important;
 }
 
 nav li a {
-    color: #ccc;
+    color: var(--light-grey);
     display: inline-block;
     /*    margin-right: 50px;*/
     margin: -5px auto 0;
@@ -160,8 +176,24 @@ nav li a {
     line-height: 20px;
 }
 
-nav li a:hover {
-    color: #fff;
+nav li a:hover .icon-fb-rect {
+    color: var(--facebook);
+}
+
+nav li a:hover .icon-linkedin-rect {
+    color: var(--linkedin);
+}
+nav li a:hover .icon-github {
+    color: var(--github);
+}
+nav li a:hover .icon-codepen {
+    color: var(--light);
+}
+nav li a:hover .icon-mail {
+    color: var(--gmail);
+}
+nav li a:hover .icon-paypal-blk {
+    color: var(--paypal);
 }
 
 .main-container {
@@ -279,7 +311,7 @@ img {
 
 
 @media screen and (max-width: 980px) {
-    .container {
+    .main-container {
         width: 100%;
         max-width: 1200px;
     }
@@ -287,10 +319,16 @@ img {
     a .block {
         width: 100%;
     }
+
+    .navbar-collapse {
+        margin-left: auto;
+        background: var(--navbar);
+        border: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .container {
+    .main-container {
         width: 100%;
     }
 
@@ -299,22 +337,21 @@ img {
         margin-right: -20px !important;
     }
 
-    /*
-
-    p, span {
-        font-size: .9em !important;
-    }
-*/
-
     a .block {
         border-radius: var(--radi-all);
         width: 100%;
     }
 
     @media screen and (min-width: 767px) {
-        .container {
+        .main-container {
             width: 100%;
             min-width: 980px;
+        }
+
+        .navbar-collapse {
+            margin-left: auto;
+            background: var(--navbar);
+            border: none;
         }
 
         p span {
@@ -323,9 +360,20 @@ img {
     }
 
     @media screen and (max-width: 640px) {
-        .container {
+        .main-container {
             width: 100%;
+            margin-top: 200px;
             margin-left: 0;
+        }
+
+        #logo {
+            margin-left: auto;
+        }
+
+        .navbar-collapse {
+            margin-left: auto;
+            background: var(--navbar);
+            border: none;
         }
 
         .title span {
