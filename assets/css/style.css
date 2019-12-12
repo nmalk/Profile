@@ -1,8 +1,12 @@
+@import url(../icomoon/style.css);
+
 :root {
     --pressed: #000;
     --shadow: #2224;
     --invert: #333;
     --rebecca: #623193;
+    --color: initial;
+    --accent-color: #fff;
     --navbar: rgb(80, 20, 77);
     /* 
         vals 
@@ -64,12 +68,32 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.15em;
     line-height: 34px;
-    color: #777777;
+    --color: #777777;
     margin: 0;
     padding: 0;
     background-image: url("../images/background5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.device-width {
+    width: var(--device-width);
+}
+
+.full-width {
+    width: var(--full-width);
+}
+
+.wide {
+    margin: 0 var(--wide);
+}
+
+.page {
+    max-width: 960px;
+}
+
+.centered {
+    margin: 0 auto;
 }
 
 .sticky {
@@ -90,17 +114,17 @@ body {
 
 #logo {
     /* background: #4aaaa5; */
-    color: #ffffff;
+    color: var(--accent-color);
     /* border-bottom: 1px solid #777777; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    width: 275px;
+    width: 200px;
     height: 80px;
     text-align: center;
     line-height: 20px;
-    margin-left: 170px;
+    margin: 0 auto;
     float: left;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 a#logo {
@@ -123,14 +147,17 @@ a:hover {
     text-decoration: none !important;
 }
 
-nav h5 {
+nav li a {
     color: white;
     display: inline-block;
-    margin-right: 50px;
+    /*    margin-right: 50px;*/
+    margin: -5px auto 0;
     padding: 10px;
     line-height: 20px;
 }
-
+nav li a:hover {
+    color: #ccc;
+}
 .main-container {
     width: 100%;
     max-width: 960px;
@@ -145,8 +172,8 @@ nav h5 {
 hr {
     color: white;
     border-bottom: 1px solid rgb(141, 140, 140);
-    /*    box-shadow: 0 2px 15px #3338;
-    */
+    background: rgb(141, 140, 140);
+    box-shadow: 1px 1px 5px 1px rgb(201, 99, 116);
     margin-top: -10px;
 }
 
@@ -185,7 +212,10 @@ span,
 .no-list {
     list-style-type: var(--no);
 }
-
+.inline-block li {
+    display: inline-block;margin-right: var(--gap);
+    
+}
 .fitted {
     margin-left: -5px !important;
     margin-right: 0 !important;
@@ -269,14 +299,14 @@ img {
             width: 100%;
             margin-left: 0;
         }
-        
+
         .title span {
             line-height: normal !important;
         }
 
         a .block {
             border-radius: var(--radi-all);
-            
+
             width: 100%;
         }
     }
