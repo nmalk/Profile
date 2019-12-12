@@ -7,6 +7,9 @@
     --rebecca: #623193;
     --color: initial;
     --accent-color: #fff;
+    --light: #fff;
+    --link: #007bff;
+    --hover: #3bcaa9;
     --navbar: rgb(80, 20, 77);
     /* 
         vals 
@@ -58,6 +61,9 @@
     --parallax: center center/cover no-repeat fixed;
     /*    --img-path: url('../../images/img.jpg'); */
     /* e.g. */
+    --img-path1: url("../images/krave.png");
+    --img-path2: url("../images/krave.png");
+    --img-path3: url("../images/krave.png");
 }
 
 * {
@@ -136,28 +142,28 @@ nav {
 }
 
 a {
-    --link: #007bff;
     color: var(--link);
     text-decoration: none !important;
 }
 
 a:hover {
-    --hover: #3bcaa9;
     color: var(--hover);
     text-decoration: none !important;
 }
 
 nav li a {
-    color: white;
+    color: #ccc;
     display: inline-block;
     /*    margin-right: 50px;*/
     margin: -5px auto 0;
     padding: 10px;
     line-height: 20px;
 }
+
 nav li a:hover {
-    color: #ccc;
+    color: #fff;
 }
+
 .main-container {
     width: 100%;
     max-width: 960px;
@@ -170,7 +176,7 @@ nav li a:hover {
 }
 
 hr {
-    color: white;
+    color: var(--light);
     border-bottom: 1px solid rgb(141, 140, 140);
     background: rgb(141, 140, 140);
     box-shadow: 1px 1px 5px 1px rgb(201, 99, 116);
@@ -180,7 +186,7 @@ hr {
 h1,
 h2,
 .text {
-    color: white;
+    color: var(--light);
     font-size: 1.2em !important;
     padding: 10px;
 }
@@ -189,13 +195,13 @@ h1,
 h2,
 span,
 .text {
-    color: white;
+    color: var(--light);
     text-shadow: -1.5px -1.5px 1px var(--pressed);
 }
 
 
 .title {
-    color: white;
+    color: var(--light);
     font-size: 1em !important;
     text-shadow: -1.5px -1.5px 1px var(--pressed);
     margin-bottom: calc(var(--outer) * 1.5);
@@ -212,19 +218,22 @@ span,
 .no-list {
     list-style-type: var(--no);
 }
+
 .inline-block li {
-    display: inline-block;margin-right: var(--gap);
-    
+    display: inline-block;
+    margin-right: var(--gap);
+
 }
+
 .fitted {
     margin-left: -5px !important;
     margin-right: 0 !important;
 }
 
 a .block {
-    color: white;
+    color: var(--light);
     border: 1px var(--style);
-    height: 200px;
+    height: 170px;
     position: relative;
     top: var(--gap);
 }
@@ -232,12 +241,31 @@ a .block {
 .block {
     background-color: var(--rebecca);
     border-radius: var(--radi-all);
-    opacity: .5;
+    opacity: .7;
 }
 
 .block:hover {
     border: 3px solid var(--info);
-    opacity: .8;
+    opacity: 1;
+}
+
+.img:nth-child(1) {
+    background: var(--img-path1);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.img:nth-child(2) {
+    background: var(--img-path2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img:nth-child(3) {
+    background: var(--img-path3);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 img {
@@ -306,7 +334,6 @@ img {
 
         a .block {
             border-radius: var(--radi-all);
-
             width: 100%;
         }
     }
