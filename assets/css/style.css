@@ -300,12 +300,11 @@ a .block {
     background-size: cover;
 }
 .img {
-    transition: ease-out 1s;
-    transi
+    transition: .8s ease-out;
 }
 .img:hover {
     transform: rotate(-.4deg);
-    transition: ease-in 300ms;
+    transition: transform .6s ease-in;
 }
 img {
     width: 230px;
