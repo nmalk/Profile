@@ -115,7 +115,7 @@ body {
     margin: 0 auto;
 }
 
-.sticky {
+.fixed {
     position: fixed;
     top: 0;
     width: 100%;
@@ -299,7 +299,14 @@ a .block {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.img {
+    transition: ease-out 1s;
+    transi
+}
+.img:hover {
+    transform: rotate(-.4deg);
+    transition: ease-in 300ms;
+}
 img {
     width: 230px;
     height: 240px;
@@ -331,7 +338,11 @@ img {
     .main-container {
         width: 100%;
     }
-
+ .navbar-collapse {
+            margin-left: auto;
+            background: var(--navbar);
+            border: none;
+        }
     .fitted {
         margin-left: -20px !important;
         margin-right: -20px !important;
