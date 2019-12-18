@@ -2,6 +2,7 @@
 
 :root {
     --pressed: #000;
+    --dented: #1c0122;
     --shadow: #2224;
     --invert: #333;
     --rebecca: #623193;
@@ -11,7 +12,7 @@
     --light-grey: #ccc;
     --link: #007bff;
     --hover: #3bcaa9;
-    --navbar: rgb(80, 20, 77);
+    --navbar: rgb(80, 20, 77); /* #50144d */
     /* Social Media 
     ---------------------*/
     --facebook: #3b5999;
@@ -62,6 +63,12 @@
     /* padding */
     --outer: 15px;
     /* margin */
+    /* Positioning */
+    --absl: absolute;
+    --relt: relative;
+    --stky: sticky;
+    --stat: static;
+    --fxd: fixed;
     /* 
         Background image (Parallax)
     --------------------------------------------*/
@@ -183,15 +190,19 @@ nav li a:hover .icon-fb-rect {
 nav li a:hover .icon-linkedin-rect {
     color: var(--linkedin);
 }
+
 nav li a:hover .icon-github {
     color: var(--github);
 }
+
 nav li a:hover .icon-codepen {
     color: var(--light);
 }
+
 nav li a:hover .icon-mail {
     color: var(--gmail);
 }
+
 nav li a:hover .icon-paypal-blk {
     color: var(--paypal);
 }
@@ -208,6 +219,8 @@ nav li a:hover .icon-paypal-blk {
 }
 
 hr {
+    height: 1.3px;
+    border-radius: 5px;
     color: var(--light);
     border-bottom: 1px solid rgb(141, 140, 140);
     background: rgb(141, 140, 140);
@@ -230,7 +243,6 @@ span,
     color: var(--light);
     text-shadow: -1.5px -1.5px 1px var(--pressed);
 }
-
 
 .title {
     color: var(--light);
@@ -299,13 +311,16 @@ a .block {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .img {
     transition: .8s ease-out;
 }
+
 .img:hover {
     transform: rotate(-.4deg);
     transition: transform .6s ease-in;
 }
+
 img {
     width: 230px;
     height: 240px;
@@ -315,6 +330,24 @@ img {
     border-radius: 20px;
 }
 
+footer {
+    background: var(--navbar);
+    height: 70px;
+    width: var(--full-width);
+    padding: var(--inner);
+    position: var(--relt);
+    bottom: 0px !important;
+}
+
+.copy {
+    color: var(--light);
+    font-size: 1.1em;
+    text-shadow: -1.5px -1.5px 0 var(--dented);
+}
+
+.txt-center {
+    text-align: center;
+}
 
 @media screen and (max-width: 980px) {
     .main-container {
@@ -337,11 +370,13 @@ img {
     .main-container {
         width: 100%;
     }
- .navbar-collapse {
-            margin-left: auto;
-            background: var(--navbar);
-            border: none;
-        }
+
+    .navbar-collapse {
+        margin-left: auto;
+        background: var(--navbar);
+        border: none;
+    }
+
     .fitted {
         margin-left: -20px !important;
         margin-right: -20px !important;
