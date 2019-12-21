@@ -55,7 +55,6 @@
     /* for callouts */
     /* styling variables */
     --style: solid #666;
-    --btn-gap: 15px 0 10px;
     /* Action */
     --moveX: var(--arg);
     --moveY: var(--arg);
@@ -68,6 +67,7 @@
     /* padding */
     --outer: 15px;
     /* margin */
+    --btn-gap: 15px 0 25px;
     /* Positioning */
     --absl: absolute;
     --relt: relative;
@@ -167,7 +167,12 @@
 .pull-left-40 {
     margin-left: var(--moveX, -40px);
 }
-
+.mt5 {
+    margin-top: 5px !important;
+}
+.mt10 {
+    margin-top: 10px !important;
+}
 /*
     Current Code
 ==========================*/
