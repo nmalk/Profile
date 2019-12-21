@@ -16,7 +16,7 @@
     --hover: #3bcaa9;
     --navbar: rgb(80, 20, 77);
     /* #50144d */
-    --f-bg: #333;
+    --f-bg: #222;
     /* Social Media 
     ---------------------*/
     --facebook: #3b5999;
@@ -55,6 +55,7 @@
     /* for callouts */
     /* styling variables */
     --style: solid #666;
+    --btn-gap: 15px 0 10px;
     /* Action */
     --moveX: var(--arg);
     --moveY: var(--arg);
@@ -476,7 +477,8 @@ img {
 }
 
 .btn {
-    margin-bottom: var(--gap);
+    margin: var(--btn-gap);
+    padding: 5px 30px;
 }
 
 .btn:hover {
