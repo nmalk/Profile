@@ -12,15 +12,15 @@ body {
     background-repeat: no-repeat;
 }
 
-.fixed {
-    position: fixed;
+.sticky {
+    position: sticky;
     top: 0;
     width: 100%;
 }
 
 .navbar {
     background-color: rgb(80, 20, 77);
-    box-shadow: 1px 1px 5px 1px rgb(116, 67, 98);
+    box-shadow: 1px 1px 10px 1px rgb(116, 67, 98);
     width: 100%;
     height: 60px;
     margin: 0;
@@ -46,9 +46,8 @@ a {
     margin-right: 10px;
 }
 
-.main-container {
+.container {
     width: 100%;
-    max-width: 960px;
     margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 40px;
@@ -65,13 +64,9 @@ h1, h2 {
 
 hr {
     height: 2px;
+    border-radius: 10px;
     background: rgb(141, 140, 140);
-    /* box-shadow: 1px 2px 5px 1px  rgb(177, 177, 77); */
     box-shadow: 1px 1px 5px 1px rgb(201, 99, 116);
-}
-
-li {
-    color: white;
 }
 
 .photoID {
@@ -88,15 +83,21 @@ li {
     color: white;
 }
 
+#info {
+    width: 1200px;
+    margin: auto;
+}
+
+
 .result {
     width: 250px;
     height: 125px;
-    background-image: url("../images/Screenshot\ KRAVE.png") no-repeat;
+    /* background-image: url("../images/Screenshot\ KRAVE.png") no-repeat; */
 }
 
-.result:hover {
+/* .result:hover {
     background-image: url("../images/Screenshot\ Result.png") no-repeat;
-}
+} */
 
 h5 {
     color: white;
@@ -104,6 +105,14 @@ h5 {
     margin-right: 50px;
     padding: 10px;
     line-height: 20px;
+}
+
+.col-lg-3, .col-lg-9 {
+    z-index: -1;
+    }
+    
+.progress-bar {
+    background-color: purple;
 }
 
 @media screen and (max-width: 980px) {
@@ -144,3 +153,7 @@ h5 {
         border: none;
     }
 }
+
+
+
+

@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale=1">
-        <title>My Profile</title>
+        <title>Profile</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/images/natalia-pic1.jpg">
+        <!-- <link rel="stylesheet" type="text/css" href="assets/images/natalia-pic1.jpg"> -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     </head>
 
 <body> 
-<header class="fixed">
+<header class="sticky">
     <nav class="navbar navbar-expand-lg navbar-light">
     <a id="logo" class="navbar-brand" href="#">Natalia Malcova</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,58 +30,64 @@
             </li>
         </ul>
     </div>
-</nav>
-        <!-- <div class="masthead"> 
-                <a href="#" id="logo">Natalia Malcova</a>
-            <nav>
-                <h5>Email: <a href="#">n.malkov10@gmail.com</a></h5>
-                <h5>LinkedIn: <a href="https://www.linkedin.com/in/natalia-malcova-1b7947159/">Profile</a></h5>
-                <h5>GitHub: <a href="https://github.com/nmalk">nmalk</a></h5>
-            </nav>
-        </div> -->
+    </nav>
 </header>
 
-    <div class="main-container">
-        <h1>About me</h1>
-        <hr>
-        <div class="ID">
-            <img class="photoID" src="assets/images/natalia-pic1.jpg" alt="photoID" width="250" height="260">
-        </div>
+<div class="container">
+    <div class="row">
+        <aside class="col-lg-3">
+            <h1>Skills</h1>
+            <div id="skills">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+            </div>
+        </aside>
 
-    <div class="text">
-        <p>&ensp; &ensp; My name is Natalia Malcova and I love to create and accomplish various new projects.  
-            I aspire to learn coding in order to become a high-class specialist who can contribute creativity and desigh skills attained during the course of my career and complemented by skills in software development.</p>
-        <p>&ensp; &ensp; I have an extensive professional experience in bridal dress'styling and alterations. This experience gave me ability to clearly understand customers needs in order to design unique, viable supperb quality products. </p>
-        <p>&ensp; &ensp; I am a George Mason University graduate with a BS in Criminology, Law, and Society. 
-            When I am not glued to the computer studying, I really enjoy watching interesting movies and TV programs along with my family and also like to be active outdoors going for long walks with my dog.
-        </p>
-    </div>   
+        <main class="col-lg-9">
+            <div class="about">
+                <h1>About me</h1>
+                <hr>
+                <div class="ID">
+                    <img class="photoID" src="assets/images/natalia-pic1.jpg" alt="photoID" width="250" height="260">
+                </div>
+        
+            <div class="text">
+                <p>&ensp; &ensp; I am a web developer who has skills in both the front-end and back-end applications. I love to create and accomplish various new projects.  
+                    I aspire to learn coding in order to become a high-class specialist who can contribute creativity and desigh skills attained during the course of my career and complemented by skills in software development.</p>
+                <p>&ensp; &ensp; I have an extensive professional experience in bridal dress'styling and alterations. This experience gave me ability to clearly understand customers needs in order to design unique, viable supperb quality products. </p>
+                <p>&ensp; &ensp; I am a George Mason University graduate with a BS in Criminology, Law, and Society. 
+                    When I am not glued to the computer studying, I really enjoy watching interesting movies and TV programs along with my family and also like to be active outdoors going for long walks with my dog.
+                </p>
+            </div>  
+            </div>
+        </main>
+    </div>
+</div>
+
+    
         
     <section id="info">
         <h2>Projects</h2>
         <hr>
         <div class="container">
             <div class="row">
-                <div class="col-md-4"><h5>GroupProject 1: Krave</h5> <a href="https://nmalk.github.io/FirstProject/"> <img class="result" src="assets/images/Screenshot KRAVE.png"></a> 
+                <div class="col-md-4"><h5>Krave</h5> <a href="https://nmalk.github.io/FirstProject/"> <img class="result" src="assets/images/Screenshot KRAVE.png"></a> 
                 </div>
-                <div class="col-md-4"><h5>GroupProject 2: YourCloset</h5> <a href= "#"> <img class="result" src=""> </a> 
+                <div class="col-md-4"><h5>YourCloset</h5> <a href= "#"> <img class="result" src="assets/images/welcomepage.png"> </a> 
                 </div>
-                <div class="col-md-4"><h5>GroupProject 3: coming soon</h5> <a href= "#"> <img class="result" src=""> </a> 
+                <div class="col-md-4"><h5>Project 3: coming soon</h5> <a href= "#"> <img class="result" src="assets/images/Screenshot1.png"> </a> 
                 </div>
             </div>
         </div>
-            <!-- <ul>
-            <li>GroupProject 1: <a href="#"> Krave</a></li>
-            <li>GroupProject 2: <a href= "#"> YourCloset</a></li>
-            <li>GroupProject 3: <a href= "#"> coming soon</a></li>
-            </ul> -->
     </section>
     
-    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/d665a22156.js"></script> -->
     <script src="./assets/javascript/javascript.js"></script>    
 </body>
 
