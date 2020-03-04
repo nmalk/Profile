@@ -1,3 +1,6 @@
+
+@import url("../icomoon/style.css");
+
 * {
     box-sizing: border-box;
 }
@@ -55,11 +58,31 @@ a {
     background-color: transparent !important;
 }
 
+/* Skills */
+#skills {
+    position:absolute;
+}
+
+.no-list {
+    list-style: none;
+}
+
+.inline-block li{
+    display: inline-block;
+    /* margin-right: 65px; */
+}
+
+ul li i {
+    position: relative;
+    /* top: 96px; */
+}
+
 h1, h2 {
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
     padding: 5px;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 hr {
@@ -81,7 +104,7 @@ hr {
 
 .text {
     color: white;
-    text-shadow: black 0.1em 0.1em 0.2em
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 #info {
