@@ -212,7 +212,7 @@ body {
     margin: 0;
     padding: 10px;
     box-shadow: 0 5px 15px #8888;
-    z-index: 1;
+    z-index: 100 !important;
 }
 
 #logo {
@@ -294,6 +294,9 @@ nav li a:hover .icon-paypal-blk {
     padding: 20px;
     background-color: transparent !important;
 }
+.container {
+    z-index: -100 !important;
+}
 
 hr {
     height: 1.3px;
@@ -319,6 +322,7 @@ span,
 .text {
     color: var(--accent-color);
     text-shadow: -1.5px -1.5px 1px var(--pressed);
+/*    z-index: -1 !important;*/
 }
 
 .accent-color {
