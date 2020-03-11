@@ -69,13 +69,15 @@ a {
 
 .inline-block li{
     display: inline-block;
-    /* margin-right: 65px; */
+    margin-right: 73px;
 }
 
 ul li i {
     position: relative;
-    /* top: 96px; */
+    top: 96px;
 }
+
+
 
 h1, h2 {
     color: white;
