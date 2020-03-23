@@ -58,6 +58,39 @@ a {
     background-color: transparent !important;
 }
 
+.icons {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    border: 1px solid red;
+}
+
+.card {
+    position: relative;
+    width: 150px;
+    background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+/* the inside part of the circle */
+.percent {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
 
 
 
