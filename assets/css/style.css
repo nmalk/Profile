@@ -58,28 +58,7 @@ a {
     background-color: transparent !important;
 }
 
-/* Skills */
-#skills {
-    position:absolute;
-}
 
-.no-list {
-    list-style: none;
-}
-
-.inline-block li{
-    display: inline-block;
-    margin-right: 73px;
-}
-
-ul li i {
-    position: relative;
-    top: 96px;
-}
-
-.icons {
-    height: ;
-}
 
 
 h1, h2 {
@@ -184,6 +163,5 @@ h5 {
 }
 
 
-/* body{text-align:center;font-family: 'Open Sans', sans-serif;} */
-svg{width:40%;}
+
 
