@@ -65,11 +65,72 @@ a {
     justify-content: space-around;
     margin-bottom: 5px;
 }
+.card {
+    position: relative;
+    width: 170px;
+    /* background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b); */
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 14px;
+    text-align: center;
+    overflow: hidden;
+}
+.card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.03);
+    pointer-events: none;
+    z-index: 1;
+}
+.percent {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
+.number {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.number h2 {
+    color: #777;
+    font-size: 25px;
+    font-weight: 600;
+}
+.number h2 span {
+    font-size: 15px;
+    color: #777;
+}
+.texti {
+    position: relative;
+    color: #777;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
 svg {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     z-index: 1000;
 }
 
@@ -78,9 +139,9 @@ svg circle {
     height: 100%;
     fill: none;
     stroke: #191919;
-    stroke-width: 8;
+    stroke-width: 10;
     stroke-linecap: round;
-    transform: translate(7px,7px);
+    transform: translate(5px,5px);
 }
 svg circle:nth-child(2){
     stroke-dasharray: 220;
@@ -92,12 +153,7 @@ svg circle:nth-child(2){
 .card:nth-child(2) svg circle:nth-child(2){
     stroke:#00a1ff;
 }
-.card:nth-child(3) svg circle:nth-child(2){
-    stroke:#ff04f7;
-}
-.card:nth-child(4) svg circle:nth-child(2){
-    stroke:#00ff43;
-}
+
 
 h1, h2 {
     color: white;
