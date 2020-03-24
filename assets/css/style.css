@@ -291,6 +291,7 @@ hr {
     height: auto;
     float: left;
     background: transparent;
+    border: 1px solid #4444;
 }
 
 .projects {
@@ -298,10 +299,6 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
-
-.card {
-    border: 1px solid #4446;
 }
 
 .card-text {
