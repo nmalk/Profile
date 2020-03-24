@@ -211,7 +211,7 @@ h5 {
     line-height: 20px;
 }
 
-.col-lg-4, .col-lg-8 {
+.col-lg-12 {
     z-index: -1;
     }
     
