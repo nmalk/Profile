@@ -1,16 +1,16 @@
-
 @import url("../icomoon/style.css");
 
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 34px;
     margin: 0;
     padding: 0;
-    background-image: url("../images/background5.jpg"); 
+    background-image: url("../images/background5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -27,7 +27,7 @@ body {
     box-shadow: 1px 1px 10px 1px rgb(116, 67, 98);
     width: 100%;
     height: 60px;
-    margin: 0;
+    margin: 0 auto;
     padding: 10px;
     position: relative;
 }
@@ -37,7 +37,13 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     text-align: center;
-    margin-left: 200px;
+    /*    margin-left: 200px;*/
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .navbar-collapse {
@@ -49,16 +55,27 @@ a {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 /* END OF NAVBAR *********************************************************************************************** */
+div.page-content {
+    margin: 0 auto;
+    width: 60vw;
+    /*    border: 1px solid #fff;*/
+}
 
 .container {
     width: 100%;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 40px;
-    padding: 20px;
+    /*    padding: 20px;*/
     background-color: transparent !important;
 }
+
+.container > div {
+    margin: 40px 0;
+}
+
 .col-lg-12 {
     z-index: -1;
 }
@@ -71,18 +88,20 @@ a {
     justify-content: space-around;
     margin-bottom: 5px;
 }
+
 .item {
     position: relative;
-    width: 170px;
+    width: 200px;
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 260px;
     border-radius: 14px;
     text-align: center;
     overflow: hidden;
 }
+
 .item:before {
     content: '';
     position: absolute;
@@ -90,10 +109,11 @@ a {
     left: -50%;
     width: 100%;
     height: 100%;
-    background: rgba(255,255,255,.03);
+    background: rgba(255, 255, 255, .03);
     pointer-events: none;
     z-index: 1;
 }
+
 .percent {
     position: relative;
     width: 110px;
@@ -103,6 +123,7 @@ a {
     background: #222;
     z-index: 1000;
 }
+
 .number {
     position: absolute;
     top: 5px;
@@ -114,15 +135,38 @@ a {
     align-items: center;
     border-radius: 50%;
 }
+
 .number h2 {
     color: #777;
     font-size: 25px;
     font-weight: 600;
 }
+
 .number h2 span {
-    font-size: 15px;
+    font-size: 14px;
     color: #777;
 }
+
+.i-lg {
+    font-size: 26px !important;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-justify {
+    text-align: justify;
+}
+
 .texti {
     position: relative;
     color: #777;
@@ -131,12 +175,18 @@ a {
     font-weight: 700;
     text-transform: uppercase;
 }
+
+[class*="icon-"] span {
+    font-size: 16px;
+}
+
 svg {
     position: relative;
     width: 110px;
     height: 110px;
     z-index: 1000;
 }
+
 svg circle {
     width: 100%;
     height: 100%;
@@ -144,51 +194,62 @@ svg circle {
     stroke: #191919;
     stroke-width: 10;
     stroke-linecap: round;
-    transform: translate(5px,5px);
+    transform: translate(5px, 5px);
 }
-svg circle:nth-child(2){
+
+svg circle:nth-child(2) {
     stroke-dasharray: 315;
     stroke-dashoffset: 315;
 }
-.level1:nth-child(1) svg circle:nth-child(2){
-    stroke:#ff04f7;
+
+.level1:nth-child(1) svg circle:nth-child(2) {
+    stroke: #ff04f7;
     stroke-dashoffset: calc(315 - (315*75) / 100);
 }
-.level1:nth-child(2) svg circle:nth-child(2){
-    stroke:#ff04f7;
+
+.level1:nth-child(2) svg circle:nth-child(2) {
+    stroke: #ff04f7;
     stroke-dashoffset: calc(315 - (315*75) / 100);
 }
-.level1:nth-child(3) svg circle:nth-child(2){
-    stroke:#ff04f7;
+
+.level1:nth-child(3) svg circle:nth-child(2) {
+    stroke: #ff04f7;
     stroke-dashoffset: calc(315 - (315*50) / 100);
 }
-.level1:nth-child(4) svg circle:nth-child(2){
-    stroke:#ff04f7;
+
+.level1:nth-child(4) svg circle:nth-child(2) {
+    stroke: #ff04f7;
     stroke-dashoffset: calc(315 - (315*60) / 100);
 }
-.level2:nth-child(1) svg circle:nth-child(2){
-    stroke:#ff04f7;
+
+.level2:nth-child(1) svg circle:nth-child(2) {
+    stroke: #ff04f7;
     stroke-dashoffset: calc(315 - (315*60) / 100);
 }
-.level2:nth-child(2) svg circle:nth-child(2){
-    stroke:#ff04f7;
+
+.level2:nth-child(2) svg circle:nth-child(2) {
+    stroke: #ff04f7;
     stroke-dashoffset: calc(315 - (315*50) / 100);
 }
-.level2:nth-child(3) svg circle:nth-child(2){
-    stroke:#ff04f7;
+
+.level2:nth-child(3) svg circle:nth-child(2) {
+    stroke: #ff04f7;
     stroke-dashoffset: calc(315 - (315*60) / 100);
 }
-.level2:nth-child(4) svg circle:nth-child(2){
-    stroke:#ff04f7;
+
+.level2:nth-child(4) svg circle:nth-child(2) {
+    stroke: #ff04f7;
     stroke-dashoffset: calc(315 - (315*60) / 100);
 }
+
 /* END OF SKILLS SECTION *********************************************************************************************** */
 
-h1, h2 {
+h1,
+h2 {
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
-    padding: 5px;
+    /*    padding: 5px;*/
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
@@ -215,45 +276,61 @@ hr {
 }
 
 #info {
-    width: 1200px;
-    margin: auto;
+    margin: var(--outer);
+}
+
+:root {
+    --gap: 5px;
+    --outer: 15px;
+    --inner: 20px;
 }
 
 /* PROJECTS SECTION **************************************************************** */
 .result {
-    width: 365px;
-    height: 500px;
+    width: 340px;
+    height: auto;
     float: left;
     background: transparent;
+    border: 1px solid #4444;
 }
+
 .projects {
-    margin-top: 5px;
+    margin: 5px auto 0 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+
 .card-text {
     color: white;
     font-size: 15px;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
+
 h5 {
     color: white;
-    margin-right: 50px;
-    padding: 10px;
+    /*    margin-right: 50px;*/
+    padding: calc(var(--inner) / 2);
     line-height: 20px;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
+
 .btn {
     background: rgb(56, 6, 56);
     border: none;
 }
+
 .btn:hover {
     background: rgb(122, 37, 80);
 }
+
 /* ********************************************************************************** */
 @media screen and (max-width: 980px) {
     .main-container {
         width: 100%;
         margin-top: 200px;
     }
+
     .navbar-collapse {
         margin-left: auto;
         background: rgb(61, 28, 57);
@@ -266,9 +343,10 @@ h5 {
         width: 100%;
         margin-top: 200px;
     }
+
     .navbar-collapse {
         margin-left: auto;
-        background:  rgb(61, 28, 57);
+        background: rgb(61, 28, 57);
         border: none;
     }
 }
@@ -278,16 +356,14 @@ h5 {
         width: 100%;
         margin-top: 200px;
     }
+
     #logo {
         margin-left: auto;
     }
+
     .navbar-collapse {
         margin-left: auto;
-        background:  rgb(61, 28, 57);
+        background: rgb(61, 28, 57);
         border: none;
     }
 }
-
-
-
-
