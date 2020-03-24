@@ -150,14 +150,39 @@ svg circle:nth-child(2){
     stroke-dasharray: 315;
     stroke-dashoffset: 315;
 }
-.card:nth-child(1) svg circle:nth-child(2){
+.level1:nth-child(1) svg circle:nth-child(2){
     stroke:#ff04f7;
-    stroke-dashoffset: calc(315 - (315*80) / 100);
+    stroke-dashoffset: calc(315 - (315*75) / 100);
 }
-.card:nth-child(2) svg circle:nth-child(2){
+.level1:nth-child(2) svg circle:nth-child(2){
     stroke:#ff04f7;
-    stroke-dashoffset: calc(400 - (400*75) / 100);
+    stroke-dashoffset: calc(315 - (315*75) / 100);
 }
+.level1:nth-child(3) svg circle:nth-child(2){
+    stroke:#ff04f7;
+    stroke-dashoffset: calc(315 - (315*50) / 100);
+}
+.level1:nth-child(4) svg circle:nth-child(2){
+    stroke:#ff04f7;
+    stroke-dashoffset: calc(315 - (315*60) / 100);
+}
+.level2:nth-child(1) svg circle:nth-child(2){
+    stroke:#ff04f7;
+    stroke-dashoffset: calc(315 - (315*60) / 100);
+}
+.level2:nth-child(2) svg circle:nth-child(2){
+    stroke:#ff04f7;
+    stroke-dashoffset: calc(315 - (315*50) / 100);
+}
+.level2:nth-child(3) svg circle:nth-child(2){
+    stroke:#ff04f7;
+    stroke-dashoffset: calc(315 - (315*60) / 100);
+}
+.level2:nth-child(4) svg circle:nth-child(2){
+    stroke:#ff04f7;
+    stroke-dashoffset: calc(315 - (315*60) / 100);
+}
+
 /* END OF SKILLS SECTION *********************************************************************************************** */
 
 h1, h2 {
@@ -200,6 +225,7 @@ hr {
     width: 365px;
     height: 500px;
     float: left;
+    background: transparent;
     /* background-image: url("../images/Screenshot\ KRAVE.png") no-repeat; */
 }
 
@@ -209,7 +235,7 @@ hr {
 
 h5 {
     color: white;
-    display: inline-block;
+    /* display: inline-block; */
     margin-right: 50px;
     padding: 10px;
     line-height: 20px;
